@@ -1,0 +1,409 @@
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  padding: 60px 5% !important;
+  background-color: #ffffff; /* Soft background for better contrast */
+  border-bottom: 1px solid #ddd; /* Subtle separation for a clean look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Heading Styling */
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000; /* Darker color for emphasis */
+  margin-bottom: 15px;
+  line-height: 1.4; /* Improved line-height for readability */
+}
+
+/* Hero Paragraph Styling */
+.hero p {
+  font-size: 20px;
+  color: #000000; /* Softer gray for secondary text */
+  margin-bottom: 30px;
+  line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Donate button styling */
+.donate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8ff7e; /* Same green background as contact button */
+  border-radius: 50px; /* Rounded edges for both buttons */
+  width: auto; /* Adjusts width based on content */
+  padding: 12px 30px; /* Increased padding for better spacing */
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 20px; /* Adds some space above the button */
+  margin-left: auto; /* Aligns the button to the right on larger screens */
+  margin-right: auto; /* Aligns the button to the left on larger screens */
+  height: 50px; /* Set a specific height to prevent vertical misalignment */
+}
+
+/* Hero Section "Donate Now" Text Styling */
+.donate-btn p {
+  margin-right: 25px; /* Increased margin between text and icon */
+  font-size: 16px; /* Increased font size for better visibility */
+  color: rgb(0, 0, 0); /* Same text color as contact button */
+  margin: 0; /* Removes any extra margin */
+  line-height: 1.2; /* Ensures the text is vertically aligned */
+  display: flex;
+  align-items: center; /* Ensures the text is vertically centered */
+}
+
+/* Icon Styling */
+.donate-btn .icon-circle {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Light green background for icon circle */
+  color: #d8ff7e; /* Matching green color for icon */
+  font-size: 36px; /* Increased font size for the icon */
+  width: 40px; /* Slightly bigger width for the icon circle */
+  height: 40px; /* Slightly bigger height for the icon circle */
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.donate-btn:hover {
+  background-color: #d8ff7e; /* Darker green on hover */
+  border-color: #d8ff7e; /* Same green color as hover effect */
+}
+
+/* Responsive Styles for Hero */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 10%; /* Reduced padding for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 32px; /* Slightly smaller heading */
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 25px; /* Slightly smaller spacing */
+  }
+
+  .hero .donate-btn {
+    font-size: 16px; /* Smaller button text */
+    padding: 10px 20px; /* Adjust button padding */
+    margin-left: auto; /* Center the button for mobile */
+    margin-right: auto; /* Center the button for mobile */
+    height: 50px; /* Set consistent height for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px; /* Smaller heading size */
+  }
+
+  .hero p {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+
+  .hero .donate-btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 15px; /* Smaller button padding */
+    margin-left: auto; /* Center the button for mobile */
+    margin-right: auto; /* Center the button for mobile */
+    height: 50px; /* Set consistent height for mobile devices */
+  }
+}
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  padding: 60px 15%;
+  background-color: #ffffff; /* Soft background for better contrast */
+  border-bottom: 1px solid #ddd; /* Subtle separation for a clean look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Add box-sizing for consistent spacing */
+}
+
+/* Hero Heading Styling */
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000; /* Darker color for emphasis */
+  margin-bottom: 15px;
+  line-height: 1.4; /* Improved line-height for readability */
+  text-transform: uppercase; /* Add uppercase for better readability */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Hero Paragraph Styling */
+.hero p {
+  font-size: 20px;
+  color: #000000; /* Softer gray for secondary text */
+  margin-bottom: 30px;
+  line-height: 1.6; /* Improved line spacing for readability */
+  font-family: Arial, sans-serif; /* Add font family for consistency */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Donate button styling */
+.donate-btn {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  background-color: #d8ff7e; /* Button background color */
+  border-radius: 50px; /* Rounded edges */
+  width: auto; /* Button adjusts to content width */
+  padding: 12px 30px; /* Space inside the button */
+  text-decoration: none; /* Remove underline from link */
+  margin: 20px auto; /* Center button on screen */
+  height: 50px; /* Fixed height to maintain alignment */
+  cursor: pointer; /* Pointer on hover */
+  box-sizing: border-box; /* Include padding and border in dimensions */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Button text styling */
+.donate-btn p {
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: rgb(0, 0, 0); /* Text color */
+  margin: 0; /* Remove extra spacing */
+  line-height: 1; /* Match text height to button */
+  display: flex; /* Flex for alignment with icon */
+  align-items: center; /* Vertical alignment */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Icon styling */
+.donate-btn .icon-circle {
+  margin-left: 15px; /* Space between text and icon */
+  display: flex;
+  align-items: center; /* Center icon */
+  justify-content: center; /* Center icon */
+  background-color: #ffffff; /* Icon background */
+  color: #d8ff7e; /* Icon color */
+  font-size: 20px; /* Icon size */
+  width: 30px; /* Icon container size */
+  height: 30px; /* Icon container size */
+  border-radius: 50%; /* Round icon */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Hover state */
+.donate-btn:hover {
+  background-color: #7c7373; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Responsive Styles for Hero */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 10%; /* Reduced padding for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 32px; /* Slightly smaller heading */
+  }
+
+  .hero p {
+    font-size: 18px; /* Slightly smaller spacing */
+  }
+
+  .hero .donate-btn {
+    font-size: 16px; /* Smaller button text */
+    padding: 10px 20px; /* Adjust button padding */
+    margin-left: auto; /* Center the button for mobile */
+    margin-right: auto; /* Center the button for mobile */
+    height: 50px; /* Set consistent height for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px; /* Smaller heading size */
+  }
+
+  .hero p {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+
+  .hero .donate-btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 15px; /* Smaller button padding */
+    margin-left: auto; /* Center the button for mobile */
+    margin-right: auto; /* Center the button for mobile */
+    height: 50px; /* Set consistent height for mobile devices */
+  }
+}
+
+/* 
+
+
+
+
+
+*/
+/* Updated Info Blocks Section */
+.info-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 20px;
+  width: calc(20% - 5px); /* Five blocks in a single row */
+  text-align: center;
+  position: relative; /* Ensures relative positioning for lines */
+}
+
+/* Title and text styling */
+.block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.block p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Block image and lines */
+.block-image {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative; /* To position lines relative to this container */
+}
+
+/* Add lines only to the first block */
+.first-block .block-image::before,
+.first-block .block-image::after,
+.first-block .block-image .third-line {
+  content: "";
+  position: absolute;
+  top: -10px; /* Move the lines outside of the image */
+  left: -10px; /* Move the lines outside of the image */
+  height: 3px;
+  background-color: black; /* Black color for the lines */
+  transition: all 0.3s ease-in-out; /* Smooth transition for responsiveness */
+}
+
+/* First line at 45 degrees */
+.first-block .block-image::before {
+  width: 40px; /* Length of first line */
+  transform: rotate(45deg); /* First line at 45 degrees */
+  top: -30px; /* Adjust top position */
+  left: -35px; /* Adjust left position */
+}
+
+/* Second line at 10 degrees */
+.first-block .block-image::after {
+  width: 40px; /* Length of second line */
+  top: -30px; /* Position of second line */
+  left: -15px; /* Adjust left position */
+  transform: rotate(10deg); /* Second line at 10 degrees */
+}
+.first-block .block-image::after {
+  width: 40px; /* Length of second line */
+  top: -35px; /* Position of second line */
+  left: -23px; /* Adjust left position */
+  transform: rotate(80deg); /* Second line at 10 degrees */
+}
+
+/* Hide the third line at 80 degrees */
+.first-block .block-image .third-line {
+  width: 0px; /* Hide third line by setting width to 0 */
+  top: -40px; /* Position outside of the image */
+  left: -15px;
+  transform: rotate(
+    80deg
+  ); /* Third line at 80 degrees, but will not be visible */
+}
+
+/* Image inside the block */
+.block-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* New Class for Amplify Their Voice Text (Styled as a Button) */
+.amplify-voice-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns the button content to the left */
+  background-color: #d8ff7e; /* Button background color */
+  border-radius: 50px; /* Rounded edges */
+  width: auto; /* Button adjusts to content width */
+  padding: 12px 30px; /* Space inside the button */
+  text-decoration: none; /* Remove underline from link */
+  margin: 25px 0; /* Align the button to the left and remove auto centering */
+  height: 50px; /* Fixed height to maintain alignment */
+  cursor: pointer; /* Pointer on hover */
+  box-sizing: border-box; /* Include padding and border in dimensions */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+/* Circle around Emoji */
+.emoji-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5dc872; /* White background for the circle */
+  color: #5dc872; /* Green color for the emoji */
+  font-size: 20px; /* Emoji size */
+  width: 30px; /* Width of the circle */
+  height: 30px; /* Height of the circle */
+  border-radius: 50%; /* Make it round */
+  margin-right: 10px; /* Space between the emoji circle and text */
+}
+
+/* Emoji size */
+.emoji {
+  font-size: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .block {
+    width: calc(33.3% - 5px); /* Three blocks per row on medium screens */
+  }
+
+  /* Ensure the lines stay in the correct position on smaller screens */
+  .first-block .block-image::before,
+  .first-block .block-image::after,
+  .first-block .block-image .third-line {
+    top: -10px; /* Keep the top positioning */
+    left: -10px; /* Keep the left positioning */
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: calc(50% - 5px); /* Two blocks per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    width: 100%; /* One block per row on extra small screens */
+  }
+}
