@@ -1,0 +1,307 @@
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  font-family: poppins, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: inherit;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flex-help {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensures content is evenly spaced */
+  gap: 1rem; /* Keeps consistent spacing between items */
+  flex: 1; /* Ensures equal growth of all columns */
+  min-height: 400px; /* Ensures a consistent minimum height */
+  padding: 1rem; /* Adds padding for a neat layout */
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+.margin-top {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* Default styles for 1920px */
+body {
+  font-size: 1rem;
+}
+
+.main {
+  padding: 2rem;
+}
+/* Base styles */
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: pre-line; /* Allows the title to break into two lines */
+}
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background-color: #d8ff7e;
+  display: inline;
+}
+.header {
+  padding: 2rem;
+  background-color: #f8f9f8;
+}
+.header-width {
+  width: 30%;
+}
+.header-width1 {
+  width: 70%;
+}
+.volunteer-button {
+  margin-top: 10px;
+  background-color: #333;
+  display: inline-block;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+.opportunities-button {
+  background-color: #f8f8f8;
+  display: inline-block;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+/* Title styles */
+.volunteer-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 1rem;
+  display: inline;
+}
+
+.volunteer-container {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+/* Subtitle styles */
+.volunteer-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.volunteer-width {
+  width: 50%;
+}
+/* Description styles */
+.volunteer-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.requirement {
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.sub-requirement {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.help {
+  background-color: #e6eaed;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 2px 0 2px;
+}
+.body-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.three {
+  height: 100%;
+  background-color: #dededf;
+  padding: 1rem;
+}
+
+.child {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+.child-requirement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  gap: 20px; /* Adds space between the grid items */
+}
+/* Responsive styles */
+
+/* For large screens (1980px and larger) */
+@media (min-width: 1980px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .header {
+    padding: 4rem;
+  }
+  .volunteer-button,
+  .opportunities-button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  .header-width {
+    width: 35%;
+  }
+  .header-width1 {
+    width: 65%;
+  }
+}
+
+/* For desktop (1440px and larger) */
+@media (min-width: 1440px) and (max-width: 1979px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .header {
+    padding: 3rem;
+  }
+  .volunteer-button,
+  .opportunities-button {
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+  }
+  .header-width {
+    width: 40%;
+  }
+  .header-width1 {
+    width: 60%;
+  }
+}
+
+/* For mobile (390px and smaller) */
+@media (max-width: 390px) {
+  .flex-help {
+    flex-direction: column;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+  }
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .header {
+    padding: 1rem;
+  }
+  .volunteer-button,
+  .opportunities-button {
+    font-size: 0.6rem;
+    padding: 0.4rem 1rem;
+  }
+  .header-width,
+  .header-width1 {
+    width: 100%;
+  }
+}
