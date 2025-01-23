@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  }
+
 .latest-news-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #f9f9f9;
-    border-radius: 20px;
+    background-color: #f8f8f8;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 1024px;
-    margin: auto;
+    margin: 10px;
   }
   
   .latest-news-content {
@@ -26,7 +31,6 @@
     padding: 5px 15px 8px 10px; 
     display: inline; 
     border-radius: 8px; 
-    font-family: "poppins, sans-serif";
   }
   
   
@@ -38,7 +42,6 @@
     background-color: #d8ff7e;
     padding: 5px 15px 8px 10px; 
     border-radius: 6px;
-    font-family: "poppins, sans-serif";
   }
   
   .news-text {
@@ -46,14 +49,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    font-family: "poppins, sans-serif";
   }
   
   .news-text p {
     font-size: 16px;
     line-height: 1.6;
     color: #333333;
-    font-family: "poppins, sans-serif";
   }
   
   .news-buttons {
@@ -117,7 +118,6 @@
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    font-family: "poppins, sans-serif";
 }
 
 .latest-update-description {
@@ -125,7 +125,6 @@
     font-size: 16px;
     margin: 10px auto 30px auto;
     max-width: 600px;
-    font-family: "poppins, sans-serif";
 }
 
 .latest-updates-grid {
@@ -138,7 +137,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f8f9fa;
+  background-color: #f8f8f8;
   transition: transform 0.2s;
 }
 
@@ -147,7 +146,27 @@
 }
 
 .update-image-container {
+  position: relative; /* Enables positioning of child elements */
   padding: 20px; /* Adds space around the image */
+}
+
+.image-date-overlay {
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  background-color: #ffffff;
+  color: #929292;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex; /* Aligns icon and text in a row */
+  align-items: center; /* Vertically centres the icon and text */
+}
+
+.image-date-overlay .fa-calendar {
+  margin-right: 5px; /* Adds space between the icon and text */
+  color: #929292;
 }
 
 .update-image {
@@ -166,14 +185,12 @@
     margin-top: 0;
     font-size: 20px;
     color: #333;
-    font-family: "poppins, sans-serif";
 }
 
 .update-content p {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
-    font-family: "poppins, sans-serif";
 }
 
 
@@ -190,5 +207,5 @@
 }
 
 .view-more-updates-button:hover {
-    background-color: #0056b3;
+    background-color: #d8ff7e;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../component/News.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function News() {
     return (
@@ -49,7 +50,11 @@ function News() {
                                 alt="New School Building"
                                 className="update-image"
                             />
-                        </div>
+                            <div className="image-date-overlay">
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
+                                <span className="date-text">July 15, 2023</span>
+                            </div>                        
+                            </div>
                         <div className="update-content">
                             <h3>New School Building Inauguration</h3>
                             <p>
@@ -68,7 +73,10 @@ function News() {
                                 alt="Healthcare Outreach"
                                 className="update-image"
                             />
-                        </div>
+<div className="image-date-overlay">
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
+                                <span className="date-text">July 28, 2023</span>
+                            </div>                         </div>
                         <div className="update-content">
                             <h3>Healthcare Outreach Program</h3>
                             <p>
@@ -81,7 +89,7 @@ function News() {
                     </div>
                 </div>
                 <button className="view-more-updates-button">View More Updates
-                <span className="arrow">↓</span>
+                    <span className="arrow">↓</span>
                 </button>
             </div>
             {/* Section for Events and Fundraisers */}
@@ -97,10 +105,13 @@ function News() {
                         <div className="update-image-container">
                             <img
                                 src="images/Gala night.jpg"
-                                alt="New School Building"
+                                alt="Gala night"
                                 className="update-image"
                             />
-                        </div>
+<div className="image-date-overlay">
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
+                                <span className="date-text">September 5, 2023</span>
+                            </div>                         </div>
                         <div className="update-content">
                             <h3>Charity Gala Night</h3>
                             <p>
@@ -110,11 +121,11 @@ function News() {
                                 inspring stories of transformed lives.
                             </p>
                             <div className="news-buttons">
-                            <button className="button-secondary">Learn More</button>
-                            <button className="button-primary">
-                                Join Now
-                            </button>                           
-                        </div>
+                                <button className="button-secondary">Learn More</button>
+                                <button className="button-primary">
+                                    Join Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                     {/* Second Update */}
@@ -122,10 +133,13 @@ function News() {
                         <div className="update-image-container">
                             <img
                                 src="/images/walkathon.jpg"
-                                alt="Healthcare Outreach"
+                                alt="walkathon"
                                 className="update-image"
                             />
-                        </div>
+<div className="image-date-overlay">
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
+                                <span className="date-text">September 28, 2023</span>
+                            </div>                         </div>
                         <div className="update-content">
                             <h3>Walkathon for a Cause</h3>
                             <p>
@@ -135,16 +149,16 @@ function News() {
                                 underprivileged children.
                             </p>
                             <div className="news-buttons">
-                            <button className="button-secondary">Learn More</button>
-                            <button className="button-primary">
-                                Join Now
-                            </button>                           
-                        </div>
+                                <button className="button-secondary">Learn More</button>
+                                <button className="button-primary">
+                                    Join Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button className="view-more-updates-button">View More Updates 
-                <span className="arrow">↓</span>
+                <button className="view-more-updates-button">View More Updates
+                    <span className="arrow">↓</span>
                 </button>
             </div>
         </>
