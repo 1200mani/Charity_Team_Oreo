@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import News from "./container/News";
+import SuccessStories from "./container/successstories";
 import { GetInvolved } from "./getinvolved/getinvolved";
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<News />} />
         <Route path="/get-involved" element={<GetInvolved />} />
+        <Route path="/" element={<SuccessStories />} />
       </Routes>
     </Router>
   );
