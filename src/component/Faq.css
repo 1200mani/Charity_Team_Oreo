@@ -1,0 +1,154 @@
+.faq-container {
+  width: 95%;
+  /* margin: 0 auto; */
+  background-color: #ddd; /* Background color for the big container */
+  padding: 30px 30px; /* Space between container edges and content */
+  border-radius: 15px;
+}
+
+.faq-block {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0; /* Vertical margin between blocks */
+  padding: 15px; /* Inner spacing for content */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background inside the block */
+}
+
+/* Ensure consistent alignment inside the container */
+.faq-container > .faq-block {
+  margin-left: 30px; /* Matches the container's left padding */
+  margin-right: 30px; /* Matches the container's right padding */
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.faq-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-number {
+  font-size: 1.8rem; /* Smaller font size */
+  font-weight: bold;
+  color: #000; /* Black color */
+}
+
+.faq-center {
+  flex: 1;
+  font-size: 1.2rem; /* Smaller font size */
+  color: #000; /* Black color */
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+}
+
+.faq-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-toggle-icon {
+  font-size: 2.2rem; /* Smaller toggle icon */
+  color: #000; /* Black color */
+}
+
+.faq-answer {
+  padding-top: 10px; /* Adjust padding */
+  font-size: 0.8rem; /* Slightly smaller font size */
+  color: #1c1818; /* Black color */
+  background-color: transparent; /* Remove background */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure the width spans the block */
+}
+
+.faq-block.open .faq-toggle-icon {
+  color: #f44336; /* Red color for the open state icon */
+}
+
+/* Remove shadow for a cleaner look, if desired */
+.faq-block {
+  box-shadow: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .faq-container > .faq-block {
+    margin-left: 15px; /* Match reduced padding */
+    margin-right: 15px; /* Match reduced padding */
+  }
+
+  .faq-block {
+    padding: 10px; /* Adjust padding for smaller blocks */
+  }
+
+  .faq-header {
+    padding: 10px; /* Adjust padding inside the header */
+  }
+
+  .faq-number {
+    font-size: 1.5rem; /* Reduce font size for numbers */
+  }
+
+  .faq-center {
+    font-size: 1rem; /* Reduce font size for text */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .faq-toggle-icon {
+    font-size: 1.8rem; /* Adjust icon size */
+  }
+
+  .faq-answer {
+    font-size: 0.75rem; /* Reduce font size for answers */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .faq-container > .faq-block {
+    margin-left: 10px; /* Match further reduced padding */
+    margin-right: 10px; /* Match further reduced padding */
+  }
+
+  .faq-block {
+    padding: 8px; /* Adjust padding */
+  }
+
+  .faq-header {
+    padding: 8px; /* Adjust padding inside the header */
+  }
+
+  .faq-number {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .faq-center {
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .faq-toggle-icon {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  .faq-answer {
+    font-size: 0.7rem; /* Adjust font size for answers */
+  }
+}

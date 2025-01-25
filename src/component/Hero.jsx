@@ -1,7 +1,13 @@
 import React from "react";
 import "./Hero.css";
-import imgSrc from "../assets/images/img1.jpg"; // Correct path after moving the image
-
+import "./FourBlocks";
+import FourBlocks from "./FourBlocks";
+import Mission from "./Mission";
+import Vision from "./Vision";
+import Goals from "./Goals";
+import HowWork from "./HowWork";
+import FaceSection from "./FaceSection";
+import Faq from "./Faq";
 const Hero = () => {
   return (
     <section className="hero">
@@ -19,62 +25,155 @@ const Hero = () => {
       </a>
 
       {/* New Blocks Section */}
+      <FourBlocks />
+      <div className="hope-today">
+        <h1>Give a Child Hope Today</h1>
+        <p>
+          Welcome to our charity's online plateform. Where we unite hearts and
+          efforts to bring hope to the lives
+        </p>
+      </div>
 
-      <div className="info-blocks">
-        <div className="block first-block">
-          <div className="block-image green-bg">
-            <img src={imgSrc} alt="Amplify Their Voice" className="block-img" />
-            {/* Rounded rectangle below the image */}
-            <div className="rounded-rect"></div>
-          </div>
-
-          {/* Styling the Amplify Their Voice Text as a Button */}
-          <div className="amplify-voice-btn">
-            <div className="emoji-circle">
-              <span className="emoji">🌟</span>
-            </div>
-            Amplify Their Voice
-          </div>
-        </div>
-
-        <div className="block">
-          <div className="block-image green-bg">
-            <h2>62%</h2>
-          </div>
-          <h3>Catastrophe Relief</h3>
+      <div className="three-sep">
+        <div>
+          <h1>85%</h1>
           <p>
-            India Grieves the Passing of Thousands. Faces Challenges in the Wake
-            of Catastrophe.
+            Children enrolled in the Loved program are Increasingly poised to
+            emerge as future leaders within their communities.
           </p>
         </div>
-
-        <div className="block">
-          <div className="block-image green-bg">
-            <img
-              src="your-image-url2.png"
-              alt="Support a Child"
-              className="block-img"
-            />
-          </div>
-          <h3>Support</h3>
+        <div>
+          <h1>3,250</h1>
           <p>
-            Support a child in need. Make a meaningful connection. Help break
-            the cycle of poverty.
+            The average time that children supported by Loved program spend in
+            secure and nurturing activities.
           </p>
         </div>
-
-        <div className="block">
-          <div className="block-image green-bg">
-            <img
-              src="your-image-url3.png"
-              alt="Do Something Great"
-              className="block-img"
-            />
-          </div>
-          <h3>Do Something Great</h3>
-          <p>Help Others to Move and Grow and Be in a Better World.</p>
+        <div>
+          <h1>69%</h1>
+          <p>
+            Secondary education completion is more probable for 69% of children
+            enrolled in the Loved program
+          </p>
         </div>
       </div>
+
+      <div className="hope-today">
+        <h1>Empowering Children, Creating Futures</h1>
+        <p>
+          At ForHelp, we are on a heartfelt mission to empower underprivileged
+          children by providing them with the essential resources and <br />{" "}
+          opportunities they need to build a brighter future.
+        </p>
+      </div>
+      <div className="we-believe">
+        <p>
+          We believe that by working together, we can create a world where every
+          child has the opportunity to reach their full potential
+        </p>
+      </div>
+      {/* Mission Section */}
+      <Mission />
+      {/* Vision Section */}
+      <Vision />
+      {/* Goals section */}
+      <Goals />
+      {/* two arrow cont */}
+      <div className="two-devide">
+        <div className="two-first-line-btn">
+          <div className="two-heading">
+            <h5>The Goal of ForHelp</h5>
+            <div className="two-arrow-symbol">↗</div>
+          </div>
+
+          <div className="">
+            <p>
+              The goal of ForHelp is to help children level up their lives by
+              providing them with the essential services they need to succeed
+            </p>
+          </div>
+        </div>
+        <div className="two-first-line-btn">
+          <div className="two-heading">
+            <h5>The organization's objective</h5>
+            <div className="two-arrow-symbol">↗</div>
+          </div>
+
+          <div className="">
+            <p>
+              Providing education and tutoring to children in need. Providing
+              healthcare and nutrition to children in need. Providing enrichment
+              opportunities to children in need. Advocating for children's
+              rights
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* how we work section  */}
+      <HowWork />
+      {/* three arrow cont */}
+      <div className="two-devide">
+        <div className="two-first-line-btn">
+          <div className="two-heading">
+            <h5>Needs Assessment</h5>
+            <div className="two-arrow-symbol">↗</div>
+          </div>
+
+          <div className="">
+            <p>
+              We start by understanding the unique challenges of the communities
+              we serve.
+            </p>
+          </div>
+        </div>
+        <div className="two-first-line-btn">
+          <div className="two-heading">
+            <h5>Collaborative Partnerships</h5>
+            <div className="two-arrow-symbol">↗</div>
+          </div>
+
+          <div className="">
+            <p>
+              We team up with local organizations and volunteers to maximize our
+              impact
+            </p>
+          </div>
+        </div>
+        <div className="two-first-line-btn">
+          <div className="two-heading">
+            <h5>Transparent Impact Reporting</h5>
+            <div className="two-arrow-symbol">↗</div>
+          </div>
+
+          <div className="">
+            <p>
+              We provide regular updates on our projects to build trust and
+              accountability
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="hope-today">
+        <h1>Spreading Smiles, Changing Lives</h1>
+        <p>
+          ForHelp is a passionate team of individuals dedicated to transforming
+          the lives of children in need. We believe that every child deserves a
+          chance to thrive, and with love, care, and quality support, we strive
+          to make a positive impact on their lives.
+        </p>
+      </div>
+      {/* face and content */}
+      <FaceSection />
+      <div className="hope-today">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Curious to know more about ForHelp and our misston? Look no further!
+          We've compiled a list of frequently asked questions to
+          <br /> provide you with the onswers you seek
+        </p>
+      </div>
+      {/* faq section  */}
+      <Faq />
     </section>
   );
 };

@@ -1,0 +1,22 @@
+/* Cards Section Styling */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  padding: 0 10%;
+}
+
+/* Responsive Styles for Cards Section */
+@media (max-width: 768px) {
+  .cards {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    padding: 0 2%;
+  }
+}

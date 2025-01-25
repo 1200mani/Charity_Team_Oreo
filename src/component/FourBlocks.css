@@ -1,0 +1,353 @@
+/* Info Blocks Section */
+.info-blocks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align all blocks to the bottom */
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px; /* Add gap between blocks */
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 20px;
+  width: calc(20% - 20px); /* 5 blocks in a row with gap */
+  text-align: center;
+  position: relative; /* Ensures relative positioning for lines */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
+/* Title and Text Styling */
+.block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #000000;
+}
+
+.block p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.3; /* Adjusted line height */
+  margin: 14px 0 14px; /* Adjusted margin */
+}
+
+/* Block Image and Lines */
+.block-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative; /* To position lines relative to this container */
+  overflow: hidden; /* Prevents image from overflowing the rounded corners */
+}
+
+.first-block .block-image::before,
+.first-block .block-image::after,
+.first-block .block-image .third-line {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease-in-out; /* Smooth transition for responsiveness */
+}
+
+.first-block {
+  position: relative;
+}
+
+.unique-arrow {
+  width: 20px;
+  position: absolute;
+  transform: rotate(0deg);
+  top: 25px;
+  height: 3px;
+  background: black;
+  left: -5px;
+}
+
+.unique-arrow::before {
+  content: "";
+  width: 37px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -20px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  left: -10px;
+}
+
+.unique-arrow::after {
+  content: "";
+  width: 20px;
+  position: absolute;
+  transform: rotate(90deg);
+  top: -20px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  left: 20px;
+}
+
+/* Hide third line */
+.first-block .block-image .third-line {
+  width: 0px; /* Hide third line by setting width to 0 */
+  top: -40px;
+  left: -15px;
+  transform: rotate(80deg); /* Third line at 80 degrees, but not visible */
+}
+
+/* Image inside the block */
+.block-img {
+  width: 100%;
+  height: 100%; /* Ensure it takes the full height of the container */
+  border-radius: 10%; /* Slightly rounded corners for a smooth look */
+  object-fit: cover; /* Ensures the image maintains aspect ratio and covers the box */
+}
+
+/* New Class for Amplify Their Voice Text (Styled as a Button) */
+.amplify-voice-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #c6cabd;
+  border-radius: 50px;
+  padding: 12px 12px;
+  margin: 10px 0;
+  height: 50px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Helvetica, Arial, sans-serif";
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Circle around Emoji */
+.emoji-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8ff7e;
+  color: #d8ff7e; /* Improved Code */
+  border-radius: 50%;
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 20px;
+  width: calc(20% - 20px);
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Title and Text Styling */
+.block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #000000;
+}
+
+.block p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.3;
+  margin: 14px 0 14px;
+}
+
+/* Block Image and Lines */
+.block-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.first-block .block-image::before,
+.first-block .block-image::after,
+.first-block .block-image .third-line {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.first-block {
+  position: relative;
+}
+
+.unique-arrow {
+  width: 20px;
+  position: absolute;
+  transform: rotate(0deg);
+  top: 25px;
+  height: 3px;
+  background: black;
+  left: -5px;
+}
+
+.unique-arrow::before {
+  content: "";
+  width: 37px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -20px;
+  left: -5px;
+  height: 3px;
+  font-size: 20px;
+  width: 30px;
+  height: 3px;
+
+  margin-right: 10px;
+}
+
+/* Emoji size */
+.emoji {
+  font-size: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .block {
+    width: calc(33.3% - 20px); /* 3 blocks per row on medium screens */
+  }
+
+  .info-blocks {
+    gap: 20px; /* Add gap between blocks */
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: calc(50% - 20px); /* 2 blocks per row on small screens */
+  }
+
+  .info-blocks {
+    gap: 15px; /* Reduce gap between blocks */
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    width: 100%; /* 1 block per row on extra small screens */
+  }
+
+  .info-blocks {
+    gap: 10px; /* Add gap between blocks */
+  }
+}
+
+.find-btn {
+  display: flex;
+  align-items: center; /* Centers the text vertically */
+  justify-content: center; /* Centers the text horizontally */
+  background-color: #c6cabd;
+  border-radius: 50px;
+  padding: 12px 12px;
+  margin: 10px 0;
+  height: 50px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Helvetica, Arial, sans-serif";
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.volunteer-btn {
+  display: flex;
+  align-items: center; /* Centers the text vertically */
+  justify-content: center; /* Centers the text horizontally */
+  background-color: #c6cabd;
+  border-radius: 50px;
+  padding: 12px 12px;
+  margin: 10px 0;
+  height: 50px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Helvetica, Arial, sans-serif";
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.four-img-text {
+  background-color: #d8ff7e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.second-p {
+  display: flex;
+  align-items: center; /* Centers the text vertically */
+  justify-content: center; /* Centers the text horizontally */
+  background-color: #c6cabd;
+  border-radius: 50px;
+  padding: 12px 12px;
+  margin: 10px 0;
+  height: 50px;
+  line-height: 50px; /* Ensures the text is vertically centered */
+  font-size: 16px; /* Optional: Adjust the font size */
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Helvetica, Arial, sans-serif";
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.second-p span {
+  display: inline-block;
+  vertical-align: middle; /* Ensures that inline text aligns properly */
+}
+
+.unique-star::before {
+  content: ") (";
+  width: 37px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -5px;
+  height: 0px;
+  background: rgb(0, 0, 0);
+  left: 15px;
+}
+
+.unique-star::after {
+  content: ") (";
+  width: 37px;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 9px;
+  height: 0px;
+  background: rgb(0, 0, 0);
+  left: 15px;
+}
+
+.unique-smile::before {
+  content: " : ";
+  font-size: 40px;
+  position: absolute;
+  transform: rotate(65deg);
+  top: 115px;
+  height: 0px;
+  color: #ffffff;
+  left: 214px;
+}
+
+.unique-smile::after {
+  content: " ) ";
+  font-size: 40px;
+  position: absolute;
+  transform: rotate(80deg);
+  top: 120px;
+  left: 195px;
+  color: #ffffff;
+}

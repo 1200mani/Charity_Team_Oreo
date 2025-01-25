@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const toggleNav = () => {
@@ -15,7 +17,7 @@ const Header = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="/get-involved">Get Involved</a>
+            <a href="#get-involved">Get Involved</a>
           </li>
           <li>
             <a href="#donate">Donate</a>
@@ -38,7 +40,9 @@ const Header = () => {
       </nav>
       <a href="#contact" className="contact-btn">
         <p>Contact Us</p>
-        <div className="icon-circle">📧</div>
+        <div className="icon-circle">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </div>
       </a>
     </header>
   );
