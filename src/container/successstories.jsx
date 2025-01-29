@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './successstories.css';
+import '../component/successstories.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
@@ -15,14 +15,6 @@ const SuccessStories = () => {
 
     return(
         <div>
-
-<div className="nav-bar">
-Navbar             {/*NAVBAR  Area*/}
- </div>
-
-
-
-
                 {/* START FIRST SECTION*/}
          <div className="container1">
          <div className="earth">
@@ -61,7 +53,7 @@ Navbar             {/*NAVBAR  Area*/}
   </svg><a href="#"></a>
 </button>
 
-<button>Support Our Cause <a href="#"></a></button>
+<button className = "support-button">Support Our Cause <a href="#"></a></button>
 </div>
          </div>
           
@@ -89,7 +81,7 @@ underprivileged children.
     <div class="cardinner">
       <div class="card-image">
       <div class="background-img">
-      <img src= '/pics/charity.png' alt="Decorative" style={{ width: '13rem', height: '13rem' }}>
+      <img src= '/images/charity.png' alt="Decorative" style={{ width: '13rem', height: '13rem' }}>
           </img>
       
           </div>
@@ -118,7 +110,7 @@ underprivileged children.
       <div class="card-image">
       <div class="background-img">
 
-      <img src= '/pics/charity2.png' alt="Decorative" style={{ width: '14rem', height: '13rem' }}>
+      <img src= '/images/charity2.png' alt="Decorative" style={{ width: '14rem', height: '13rem' }}>
       </img>
 
       </div>
@@ -148,7 +140,7 @@ underprivileged children.
     <div class="cardinner">
       <div class="card-image">
       <div class="background-img">
-      <img src= '/pics/charity3.png' alt="Decorative" style={{ width: '13rem', height: '13rem' }}>
+      <img src= '/images/charity3.png' alt="Decorative" style={{ width: '13rem', height: '13rem' }}>
       </img>
       </div>
       </div>
@@ -425,10 +417,6 @@ Donate Now
 
  {/* END FIFTH SECTION*/}
 
-
- <footer className="footer1">
-  FOOTER
-</footer>
 
 
 

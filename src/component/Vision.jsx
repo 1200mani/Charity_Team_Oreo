@@ -1,6 +1,5 @@
 import React from "react";
 import "./Vision.css";
-import imgSrc from "../assets/images/img3.jpg";
 
 const Vision = () => {
   return (
@@ -58,7 +57,7 @@ const Vision = () => {
         </div>
       </div>
       <div className="mission-image">
-        <img src={imgSrc} alt="Amplify Their Voice" />
+        <img src={"/images/img3.jpg"} alt="Amplify Their Voice" />
       </div>
     </div>
   );

@@ -1,7 +1,5 @@
 import React from "react";
 import "./FourBlocks.css";
-import imgSrc from "../assets/images/img1.jpg";
-import imgSrc1 from "../assets/images/img2.jpg";
 const FourBlocks = () => {
   return (
     <div className="info-blocks">
@@ -9,7 +7,7 @@ const FourBlocks = () => {
       <div className="block first-block">
         <div className="unique-arrow"></div>
         <div className="block-image green-bg">
-          <img src={imgSrc1} alt="Amplify Their Voice" className="block-img" />
+          <img src={"/images/img2.jpg"} alt="Amplify Their Voice" className="block-img" />
           <div className="rounded-rect"></div>
         </div>
         <div className="amplify-voice-btn">
@@ -55,7 +53,7 @@ const FourBlocks = () => {
         <div className="volunteer-btn">Be a Volunteer ↗</div>
         <div className="unique-smile"></div>
         <div className="four-img-text">
-          <img src={imgSrc} alt="Amplify Their Voice" className="block-img" />
+          <img src={"/images/img1.jpg"} alt="Amplify Their Voice" className="block-img" />
           <h4>Do Something Great</h4>
           <p>Help Others Move and Grow to Be in a Better World</p>
         </div>

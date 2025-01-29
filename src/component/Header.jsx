@@ -1,38 +1,27 @@
+// Header.js
 import React from "react";
-import "./Header.css"; // Import the CSS file
-import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome icons
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
       <nav className="navbar">
         <div className="logo">
-          <span role="img" aria-label="leaf">
-            🌱
-          </span>
+          <span role="img" aria-label="leaf">🌱</span>
         </div>
         <ul className="nav-links">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Get Involved</a>
-          </li>
-          <li>
-            <a href="#">Donate</a>
-          </li>
-          <li>
-            <a href="#">Impact Areas</a>
-          </li>
-          <li>
-            <a href="#">Success Stories</a>
-          </li>
-          <li>
-            <a href="#">News</a>
-          </li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/get-involved">Get Involved</Link></li>
+          <li><Link to="/donate">Donate</Link></li>
+          <li><Link to="/impact-areas">Impact Areas</Link></li>
+          <li><Link to="/success-stories">Success Stories</Link></li>
+          <li><Link to="/news">News</Link></li>
         </ul>
         <button className="contact-us">
-          Contact Us <i className="fa fa-envelope"></i>
+        <Link to="/contact-us" className="contact-us">
+  Contact Us <span><i className="fa fa-envelope"></i></span>
+</Link>
         </button>
       </nav>
     </header>

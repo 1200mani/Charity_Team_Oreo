@@ -1,46 +1,45 @@
 import React, { useState } from "react";
 import "./FaceSection.css";
-import imgSrc from "../assets/images/img4.jpg";
 const users = [
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
 
     feedback:
       "Thank you so much for your support! I was so grateful to receive the financial assistance that helped me pay for my son's school fees.",
     name: "John Smith",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "The help I received allowed me to stay in school and focus on my education. I couldn’t have done it without your support!",
     name: "Sarah Brown",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "This support has been life-changing. Thank you for making it possible for me to continue my journey!",
     name: "Michael Green",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "Your generosity has allowed me to pursue my dreams. I will always be grateful for your assistance!",
     name: "Emily White",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "I am so thankful for the support I received. It truly made a difference in my life. Thank you so much!",
     name: "David Johnson",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "Your support gave me the chance to improve my life. I can’t thank you enough for this opportunity!",
     name: "Jessica Taylor",
   },
   {
-    picture: { src: imgSrc },
+    picture: { src: "/images/img4.jpg" },
     feedback:
       "Your support gave me the chance to improve my life. I can’t thank you enough for this opportunity!",
     name: "Jessica Taylor",

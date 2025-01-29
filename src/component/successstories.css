@@ -81,10 +81,11 @@ text-align: left;
     padding: 12px 32px;
     border: 4px solid;
     border-color: transparent;
-    font-size: 12px;
     background-color: inherit;
     border-radius: 100px;
-    font-weight: 600;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     background-color: #000000;
     cursor: pointer;
@@ -168,7 +169,7 @@ text-align: left;
   
 
 
-button {
+.support-button {
     margin-right: 32%;
     align-items: right;
     justify-content: right;
@@ -189,12 +190,12 @@ button {
     transition: 0.2s;
    }
    
-   button:hover {
+   .support-button:hover {
     background-color: #000000;
     color: #CAFF7B;
    }
    
-   button:active {
+   .support-button:active {
     box-shadow: none;
     scale: 0.95;
    }
@@ -226,7 +227,7 @@ font-size: 29px;
 .first-header{
   font-size: 48px;
 }
- .animated-button, button {
+ .animated-button, .support-button {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.4px;
@@ -247,7 +248,7 @@ font-size: 25px;
 .first-header{
 font-size: 40px;
 }
-.animated-button, button {
+.animated-button, .support-button {
 font-size: 16px;
 font-weight: 500;
 letter-spacing: 0.4px;
@@ -270,7 +271,7 @@ width: 65%;
 .first-header{
 font-size: 30px;
 }
-.animated-button, button {
+.animated-button, .support-button {
 font-size: 12px;
 font-weight: 500;
 letter-spacing: 0.4px;
@@ -288,7 +289,7 @@ width: 62%;
 .first-header{
 font-size: 26px;
 }
-.animated-button, button {
+.animated-button, .support-button {
 margin: auto;
 margin-left:11%;
 font-size: 12px;
@@ -311,7 +312,7 @@ width: 62%;
 .first-header{
 font-size: 22px;
 }
-.animated-button, button {
+.animated-button, .support-button {
 margin: auto;
   font-size: 10px;
   font-weight: 500;
@@ -341,7 +342,7 @@ justify-content: center;
 margin: auto;
 }
 
-.animated-button, button {
+.animated-button, .support-button {
 font-size: 10px;
 font-weight: 400;
 letter-spacing: 0.4px;
@@ -384,7 +385,7 @@ overflow: hidden;
 margin-left: 20%;
 
 }
-button {
+.support-button {
 margin-right: 20%;
 align-items: right;
 justify-content: right;
@@ -402,7 +403,7 @@ padding: 12px 32px;
 .animated-button {
 margin-left: 10%;
 }
-button {
+.support-button {
 margin-right: 10%;
 }
 

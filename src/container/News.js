@@ -6,7 +6,7 @@ function News() {
     return (
         <>
             {/* Section for Introduction */}
-            <div className="latest-news-container">
+            <div className="latest-container-news">
                 <div className="latest-news-content">
                     <div className="news-heading">
                         <h3 className="news-title">Latest</h3>
@@ -24,7 +24,7 @@ function News() {
                         <div className="news-buttons">
                             <button className="button-primary">
                                 Join the Movement
-                                <span className="join-arrow">→</span>
+                                <span className="join-arrow-news">→</span>
                             </button>
                             <button className="button-secondary">Support Our Cause</button>
                         </div>
@@ -33,7 +33,7 @@ function News() {
             </div>
 
             {/* Section for Latest Updates */}
-            <div className="latest-updates">
+            <div className="latest-updates-news">
                 <h1 className="latest-update-title">Latest Updates</h1>
                 <p className="latest-update-description">
                     Discover our most recent developments and initiatives in our 'Latest Updates' section.
@@ -43,19 +43,19 @@ function News() {
 
                 <div className="latest-updates-grid">
                     {/* First Update */}
-                    <div className="update-card">
-                        <div className="update-image-container">
+                    <div className="update-card-news">
+                        <div className="update-image-container-news">
                             <img
                                 src="/images/inauguration.jpg"
                                 alt="New School Building"
-                                className="update-image"
+                                className="update-image-news"
                             />
                             <div className="image-date-overlay">
                                 <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <span className="date-text">July 15, 2023</span>
-                            </div>                        
                             </div>
-                        <div className="update-content">
+                        </div>
+                        <div className="update-content-news">
                             <h3>New School Building Inauguration</h3>
                             <p>
                                 We are delighted to announce the successful inauguration of a new school building in
@@ -66,18 +66,18 @@ function News() {
                         </div>
                     </div>
                     {/* Second Update */}
-                    <div className="update-card">
-                        <div className="update-image-container">
+                    <div className="update-card-news">
+                        <div className="update-image-container-news">
                             <img
                                 src="/images/healthcare.jpg"
                                 alt="Healthcare Outreach"
-                                className="update-image"
+                                className="update-image-news"
                             />
-<div className="image-date-overlay">
+                            <div className="image-date-overlay">
                                 <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <span className="date-text">July 28, 2023</span>
                             </div>                         </div>
-                        <div className="update-content">
+                        <div className="update-content-news">
                             <h3>Healthcare Outreach Program</h3>
                             <p>
                                 Our recent healthcare outreach program provided medical check-ups and essential
@@ -89,11 +89,11 @@ function News() {
                     </div>
                 </div>
                 <button className="view-more-updates-button">View More Updates
-                    <span className="arrow">↓</span>
+                    <span className="arrow-news">↓</span>
                 </button>
             </div>
             {/* Section for Events and Fundraisers */}
-            <div className="latest-updates">
+            <div className="latest-updates-news">
                 <h1 className="latest-update-title">Events and Fundraisers</h1>
                 <p className="latest-update-description">
                     Explore our upcoming events and fundraisers, where your participation directly supports your mission.
@@ -101,18 +101,18 @@ function News() {
                 </p>
                 <div className="latest-updates-grid">
                     {/* First Update */}
-                    <div className="update-card">
-                        <div className="update-image-container">
+                    <div className="update-card-news">
+                        <div className="update-image-container-news">
                             <img
                                 src="images/Gala night.jpg"
                                 alt="Gala night"
-                                className="update-image"
+                                className="update-image-news"
                             />
-<div className="image-date-overlay">
+                            <div className="image-date-overlay">
                                 <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <span className="date-text">September 5, 2023</span>
                             </div>                         </div>
-                        <div className="update-content">
+                        <div className="update-content-news">
                             <h3>Charity Gala Night</h3>
                             <p>
                                 Join us for a memorable Charity Gala Night to
@@ -129,18 +129,18 @@ function News() {
                         </div>
                     </div>
                     {/* Second Update */}
-                    <div className="update-card">
-                        <div className="update-image-container">
+                    <div className="update-card-news">
+                        <div className="update-image-container-news">
                             <img
                                 src="/images/walkathon.jpg"
                                 alt="walkathon"
-                                className="update-image"
+                                className="update-image-news"
                             />
-<div className="image-date-overlay">
+                            <div className="image-date-overlay">
                                 <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <span className="date-text">September 28, 2023</span>
                             </div>                         </div>
-                        <div className="update-content">
+                        <div className="update-content-news">
                             <h3>Walkathon for a Cause</h3>
                             <p>
                                 Lace your sneakers and participate in our annual Walkathon to support our Healthcare for
@@ -158,7 +158,7 @@ function News() {
                     </div>
                 </div>
                 <button className="view-more-updates-button">View More Updates
-                    <span className="arrow">↓</span>
+                    <span className="arrow-news">↓</span>
                 </button>
             </div>
         </>
