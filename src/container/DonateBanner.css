@@ -1,0 +1,69 @@
+.donate-banner {
+    background-color: #d8ff7e;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .donate-banner h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3opx;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .donate-banner p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .donate-link {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .donate-link:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  .donate-btn {
+    margin-top: 20px;
+    border: 1px solid black; /* Reduced border width */
+    padding: 2px; /* Reduced padding to make the button smaller */
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d8ff7e;
+    color: black;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  
+  
+  .donate-btn i {
+    margin-left: 10px;
+  }
+  
+  .donate-btn:hover {
+     transform: scale(1.1);
+  }
+  

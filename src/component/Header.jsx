@@ -1,49 +1,40 @@
 import React from "react";
-import "./Header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css"; // Import the CSS file
+import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome icons
 
 const Header = () => {
-  const toggleNav = () => {
-    document.querySelector("nav").classList.toggle("active");
-  };
-
   return (
     <header>
-      <div className="logo">😁</div>
-      <nav>
-        <ul>
+      <nav className="navbar">
+        <div className="logo">
+          <span role="img" aria-label="leaf">
+            🌱
+          </span>
+        </div>
+        <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a href="#get-involved">Get Involved</a>
+            <a href="#">Get Involved</a>
           </li>
           <li>
-            <a href="#donate">Donate</a>
+            <a href="#">Donate</a>
           </li>
           <li>
-            <a href="#impact-areas">Impact Areas</a>
+            <a href="#">Impact Areas</a>
           </li>
           <li>
-            <a href="#success-stories">Success Stories</a>
+            <a href="#">Success Stories</a>
           </li>
           <li>
-            <a href="#news">News</a>
+            <a href="#">News</a>
           </li>
         </ul>
-        <div className="hamburger" onClick={toggleNav}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <button className="contact-us">
+          Contact Us <i className="fa fa-envelope"></i>
+        </button>
       </nav>
-      <a href="#contact" className="contact-btn">
-        <p>Contact Us</p>
-        <div className="icon-circle">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </div>
-      </a>
     </header>
   );
 };
