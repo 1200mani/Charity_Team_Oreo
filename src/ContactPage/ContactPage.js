@@ -42,7 +42,7 @@ const ContactPage = () => {
             </div>
             <div className="link-icon-div">
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const ContactPage = () => {
             </div>
             <div className="link-icon-div">
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const ContactPage = () => {
             </div>
             <div className="link-icon-div">
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const ContactPage = () => {
             </div>
             <div className="link-icon-div">
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -105,7 +105,7 @@ const ContactPage = () => {
             </div>
             <div className="link-icon-div">
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -149,7 +149,7 @@ const ContactPage = () => {
             Policy</label>
             </div>
             <div className="btn-field">
-                <button>Send your Message</button>
+                <button className="contact-btn">Send your Message</button>
             </div>
           </div>
 
@@ -163,7 +163,7 @@ const ContactPage = () => {
             <div className="btn-field">
                 <div className="btn-text">Donation Page</div>
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>
@@ -175,7 +175,7 @@ const ContactPage = () => {
             <div className="btn-field">
                 <div className="btn-text">Donation Page</div>
                 <div className="link-icon">
-                    <div className="arrow">
+                    <div className="arrow-cont-new-cont-new">
                         &#x2197;
                     </div>
                 </div>

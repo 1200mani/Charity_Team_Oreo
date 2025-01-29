@@ -1,12 +1,11 @@
 import React from "react";
 import "./Mission.css";
-import imgSrc from "../assets/images/img3.jpg";
 
 const Mission = () => {
   return (
     <div className="mission-tab">
       <div className="mission-image">
-        <img src={imgSrc} alt="Amplify Their Voice" />
+        <img src={"/images/img3.jpg"} alt="Amplify Their Voice" />
       </div>
       <div className="mission-para">
         <div className="first-line">

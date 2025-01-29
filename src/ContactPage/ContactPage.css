@@ -217,7 +217,7 @@ textarea {
   }
 }
 
-button {
+.contact-btn {
   height: 3rem;
   width: 12rem;
   background-color: black;
@@ -282,11 +282,11 @@ button {
   }
 }
 
-& .arrow {
+& .arrow-cont-new {
   
   color: #fff;
   font-size: 2rem;
-}
+} 
 
 
 

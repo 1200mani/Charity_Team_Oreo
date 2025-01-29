@@ -1,12 +1,11 @@
 import React from "react";
 import "./Goals.css";
-import imgSrc from "../assets/images/img4.png";
 
 const HowWork = () => {
   return (
     <div className="big-cont">
       <div className="image-text-container">
-        <img src={imgSrc} alt="Amplify Their Voice" />
+        <img src={"/images/img4.png"} alt="Amplify Their Voice" />
         <div className="text-content">
           <h1>How We Work</h1>
           <p>

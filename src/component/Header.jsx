@@ -1,49 +1,29 @@
+// Header.js
 import React from "react";
 import "./Header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const toggleNav = () => {
-    document.querySelector("nav").classList.toggle("active");
-  };
-
   return (
     <header>
-      <div className="logo">😁</div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#get-involved">Get Involved</a>
-          </li>
-          <li>
-            <a href="#donate">Donate</a>
-          </li>
-          <li>
-            <a href="#impact-areas">Impact Areas</a>
-          </li>
-          <li>
-            <a href="#success-stories">Success Stories</a>
-          </li>
-          <li>
-            <a href="#news">News</a>
-          </li>
+      <nav className="navbar">
+        <div className="logo">
+          <span role="img" aria-label="leaf">🌱</span>
+        </div>
+        <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/get-involved">Get Involved</Link></li>
+          <li><Link to="/donate">Donate</Link></li>
+          <li><Link to="/impact-areas">Impact Areas</Link></li>
+          <li><Link to="/success-stories">Success Stories</Link></li>
+          <li><Link to="/news">News</Link></li>
         </ul>
-        <div className="hamburger" onClick={toggleNav}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <button className="contact-us">
+        <Link to="/contact-us" className="contact-us">
+  Contact Us <span><i className="fa fa-envelope"></i></span>
+</Link>
+        </button>
       </nav>
-      <a href="#contact" className="contact-btn">
-        <p>Contact Us</p>
-        <div className="icon-circle">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </div>
-      </a>
     </header>
   );
 };

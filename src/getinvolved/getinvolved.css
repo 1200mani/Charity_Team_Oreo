@@ -1,6 +1,6 @@
-/* Global Reset */
+Global Reset
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,16 +8,16 @@
 
 html {
   font-size: 16px; /* Base font size */
-}
+/* } */
 
-body {
+/* body {
   font-family: poppins, sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #333;
   margin: 0;
   padding: 0;
-}
+}  */
 
 /* Utility Classes */
 .container {
