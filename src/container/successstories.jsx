@@ -53,7 +53,7 @@ const SuccessStories = () => {
   </svg><a href="#"></a>
 </button>
 
-<button>Support Our Cause <a href="#"></a></button>
+<button className = "support-button">Support Our Cause <a href="#"></a></button>
 </div>
          </div>
           
