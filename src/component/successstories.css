@@ -37,15 +37,18 @@ body {
 .first-header{
 text-align: left;
     align-items: left;
-    margin-left: 3%;
-    margin-top: 5%;
+    margin-left: 4%;
+    margin-top: 2%;
 
 }
-.highlight1, .highlight2{
+.highlightonee, .highlighttwoo{
     background-color: #d8ff7e;
-    border: 9px solid #d8ff7e;
+    border: 7px solid #d8ff7e;
     border-radius: 10px;
 }
+
+
+
 
 .first-para{
     text-align: middle;
@@ -81,10 +84,8 @@ text-align: left;
     padding: 12px 32px;
     border: 4px solid;
     border-color: transparent;
-    background-color: inherit;
     border-radius: 100px;
-    font-family: inherit;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: rgb(255, 255, 255);
     background-color: #000000;
@@ -92,7 +93,6 @@ text-align: left;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     margin-left: 34%;
-   
   }
   
   .animated-button svg {
@@ -200,11 +200,7 @@ text-align: left;
     scale: 0.95;
    }
 
-
    @media (width > 2650px) {
-
- 
-    
     .first-header{
       margin-top: 5% ;
       
@@ -217,7 +213,6 @@ text-align: left;
 
 
 @media (width > 2000px) {
-
 .first-para{
 font-size: 29px;
  
@@ -241,9 +236,7 @@ font-size: 29px;
 
 .first-para{
 font-size: 25px;
-
 }
-
 
 .first-header{
 font-size: 40px;
@@ -256,14 +249,10 @@ padding: 18px 36px;
 }
 }
 
-
-
 @media (width < 1350px) {
-
 .first-para{
 font-size: 18px;
 width: 65%;
-
 
 }
 
@@ -302,11 +291,9 @@ padding: 18px 36px;
 }
 
 @media (width < 1010px) {
-
 .first-para{
 font-size: 14px;
 width: 62%;
-
 }
 
 .first-header{
@@ -318,9 +305,14 @@ margin: auto;
   font-weight: 500;
   letter-spacing: 0.4px;
   padding: 10px 32px;
-
   }
-  
+  .highlightonee, .highlighttwoo{
+    background-color: #d8ff7e;
+    border: 4.5px solid #d8ff7e;
+    border-radius: 10px;
+}
+
+
   }
 
   @media (max-width : 850px) {
@@ -442,8 +434,8 @@ margin-right: 10%;
 }
 
 .card {
-  width: 355px;                  /* Fixed width for each card */
-  height: 480px;                 /* Fixed height for each card */
+  width: 418px;                  /* Fixed width for each card */
+  height: 520px;                 /* Fixed height for each card */
   border-radius: 20px;
   background-color: #f8f8f8;
   border: 5px solid #ebebeb;
@@ -491,11 +483,11 @@ margin-right: 10%;
 
 .text-body {
     color: rgb(90, 90, 90);
-  margin-top: -50%;
+  margin-top: -45%;
 }
 
 .text-title {
-  margin-top: -60%;
+  margin-top: -50%;
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -524,7 +516,7 @@ margin-right: 10%;
 
 .card-image {
   background-color: rgb(206, 255, 134);
-  width: 385px;
+  width: 375px;
   height: 220px;
   border-radius: 6px;
 }
@@ -577,7 +569,7 @@ margin-right: 10%;
   transform: translate(0px, 0px) rotate(0deg);
   transition: 0.2s;
   text-decoration: none; /* Added this line to remove underline */
-  margin-top: 3%;
+  
 }
 
 .btn-show-all:hover {
@@ -598,8 +590,6 @@ margin-right: 10%;
  margin-bottom: 3.5%;
  
 } 
-
-
 /* Add media query for responsiveness */
 
 
@@ -609,7 +599,7 @@ margin-right: 10%;
   
   .card {
     margin: auto;
-    width: 290px !important;  
+    width: 290px ;  
   }
 
   .text-body,.table-cell {
@@ -623,17 +613,17 @@ margin-right: 10%;
 
 
 .text-title{
-  font-size: 15px !important;
-  margin-top: -70%;
+  font-size: 15px ;
+  margin-top: -60%;
 }
 
 .cardinner {
-  width: 305px !important;
+  width: 305px ;
 }
 
 .card-image {
-  width: 305px !important;
-  height: 200px !important;
+  width: 305px ;
+  height: 200px ;
 }
 }
 
@@ -678,7 +668,7 @@ margin-right: 10%;
   height: 220px;
 }
 .btn-show-all {
-  margin-top: -15% !important;
+  margin-top: -15% ;
 }
 }
 
@@ -701,7 +691,7 @@ margin-right: 10%;
 } 
 
   .card {
-    width: 350px;  /* Cards take up full width on small screens */
+    width: 407px;  /* Cards take up full width on small screens */
   }
 
   .text-body,.table-cell {
@@ -718,22 +708,10 @@ margin-right: 10%;
 }
 
 .card-image {
-  width: 375px;
+  width: 362px;
   height: 220px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -831,12 +809,14 @@ margin-right: 10%;
   font-size: 1.1em;
   font-weight: bold;
   text-align: left;
+  margin-top: 30px;
 }
 
 
 .card-des {
     color: rgb(90, 90, 90);
   text-align: left;
+  margin-top: 40px;
 }
 
 
@@ -1044,7 +1024,7 @@ margin-right: 10%;
 }
 
 .card-info{  
- width: 49%;
+ width: 50%;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -1073,18 +1053,9 @@ margin-right: 10%;
     padding: 12px 30px;
     transform: translate(0px, 0px) rotate(0deg);
     transition: 0.2s;
+    margin-top: 20px;
     margin-bottom: 5%;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* responsive  */
@@ -1101,14 +1072,10 @@ margin-right: 10%;
   
   }
 
-
-
 .card-title{
   font-size: 15px !important;
 
 }
-
-
 
 .card-image-container4 {
   width: 325px !important;
@@ -1134,6 +1101,10 @@ margin-right: 10%;
  margin-bottom: 3.5%;
  
 } 
+
+.card-info{  
+  width: 90% !important;
+ }
 
   .card4 {
     width: 350px;  /* Cards take up full width on small screens */
@@ -1177,6 +1148,9 @@ margin-right: 10%;
  
 } 
 
+.card-info{  
+  width: 90% !important;
+ }
   .card4 {
     margin: auto;
     width: 410px;  /* Cards take up full width on small screens */
@@ -1191,15 +1165,11 @@ margin-right: 10%;
   font-size: 20px;
 }
 
-
-
 .card-image-container4{
   width: 380px;
   height: 220px;
 }
 }
-
-
 
 
 
@@ -1240,7 +1210,7 @@ margin-right: 10%;
 .donate-container{
   margin: auto;
   margin-bottom: 6%;
- width: 665px;
+ width: 630px;
   align-items: right;
   justify-content: right;
   gap: 10px;
@@ -1319,6 +1289,7 @@ margin-right: 10%;
 
 .donate-button:hover {
   background-color: #000;
+  color: #e0e8ef;
 }
 
 .donate-button:hover .button__icon-wrapper {

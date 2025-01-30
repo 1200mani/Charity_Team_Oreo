@@ -22,12 +22,12 @@ const SuccessStories = () => {
             src="https://lottie.host/8bea9605-ad89-4ee5-8597-7d7b37ebd390/0eqaRBoRL7.lottie"
             loop
             autoplay
-            style={{ width: '50%', height: '50%' }}
+            style={{ width: '35%', height: '35%' }}
           />
         </div>
             <h1 className="first-header">
-                <span className="highlight1">Stories of </span> <br />
-                 <span className="highlight2">Hope and Resilience</span>
+                <span className="highlightonee">Stories of </span> <br />
+                 <span className="highlighttwoo">Hope and Resilience</span>
             </h1>
             <p className="first-para">
             Explore heartwarming and inspiring stories of children whose lives have beon positively impacted by ForHelp's initiatives. 
@@ -168,7 +168,6 @@ underprivileged children.
         target="_blank"
         >View More Stories</a>
 </div>
-
 </div>
  {/* END SECOND SECTION*/}
 
@@ -348,8 +347,6 @@ Your support plays a pivotal role in driving positive change across various init
         class="button-in"
         >View Case Study</a>
 </div>
-
-
 </div>
 <a
         href="#"
@@ -377,7 +374,7 @@ Your support plays a pivotal role in driving positive change across various init
         Click here to donate now and help level up the lives of children in need.
      
 <button href="#" class="donate-button" >
-Donate Now
+Donate Now &nbsp;
   <span class="button__icon-wrapper">
     <svg
       viewBox="0 0 14 15"
