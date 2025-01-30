@@ -45,7 +45,7 @@
     transform: scale(1.05);
   }
   
-  .donate-btn {
+  .donate-btn-b {
     margin-top: 20px;
     border: 1px solid black; /* Reduced border width */
     padding: 2px; /* Reduced padding to make the button smaller */

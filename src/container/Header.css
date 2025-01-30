@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: white;
+    padding: 10px 2rem;
+    background-color: rgb(253, 253, 253);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 100px;
     position: relative;
@@ -13,9 +13,14 @@
   .logo {
     font-size: 1.5rem;
   }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
   
-  /* Hamburger Menu */
-  .hamburger {
+  /*Menu */
+  .lines-header {
     display: none;
     background: none;
     border: none;
@@ -58,7 +63,7 @@
   
   /* Mobile Responsiveness */
   @media (max-width: 768px) {
-    .hamburger {
+    .lines-header {
       display: block;
     }
   
@@ -83,11 +88,13 @@
       padding: 10px 0;
       text-align: center;
     }
-  
+    .nav-right {
+      display: flex;
+      gap: 0.5rem;
+  } 
+
     .contact-us {
-      width: 100%;
-      margin-top: 1rem;
-      text-align: center;
+        display: none;
     }
   }
   

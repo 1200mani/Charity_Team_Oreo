@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css"; // Import the CSS file
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -12,13 +14,13 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <nav className="footer-nav">
-          <a href="#">Home</a>
-          <a href="#">Get Involved</a>
-          <a href="#">Donate</a>
-          <a href="#">Impact Areas</a>
-          <a href="#">Success Stories</a>
-          <a href="#">News</a>
-          <a href="#">Contact Us</a>
+          <Link to={"/"}>Home</Link>
+          <Link to="/get-involved">Get Involved</Link>
+          <Link to="/donate">Donate</Link>
+          <Link to="/impact-areas">Impact Areas</Link>
+          <Link to="/success-stories">Success Stories</Link>
+          <Link to="/news">News</Link>
+          <Link to="/contact-us" >Contact Us</Link>
         </nav>
 
         {/* Social Media Icons */}
