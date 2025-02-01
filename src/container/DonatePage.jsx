@@ -10,9 +10,9 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"; //
 const DonatePage = () => {
   return (
     <>
-    <div className="container">
+    <div className="donatecontainer">
       {/* Left Side: Text */}
-      <div className="text-content">
+      <div className="donatetext-content">
         <h2>Making a Meaningful Difference Together</h2>
         <p>
           At Forhelp, we believe that true impact is achieved when individuals,
@@ -26,20 +26,20 @@ const DonatePage = () => {
       </div>
 
       {/* Right Side: Statistics */}
-      <div className="statistics">
-        <div className="stat-box">
+      <div className="donate-statistics">
+        <div className="donate-stat-box">
           <h3>70%</h3>
           <p>Education Support</p>
         </div>
-        <div className="stat-box">
+        <div className="donate-stat-box">
           <h3>24/7</h3>
           <p>Healthcare for Children</p>
         </div>
-        <div className="stat-box">
+        <div className="donate-stat-box">
           <h3>108</h3>
           <p>Nutrition Programs</p>
         </div>
-        <div className="stat-box">
+        <div className="donate-stat-box">
           <h3>+105</h3>
           <p>Happy Children</p>
         </div>

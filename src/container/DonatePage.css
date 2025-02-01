@@ -1,4 +1,4 @@
-.container {
+.donatecontainer {
   background-color: white;
   border-radius: 10px;
   padding: 40px;
@@ -12,24 +12,24 @@
 }
 
 /* Left Text Content */
-.text-content {
+.donatetext-content {
   flex: 1;
   min-width: 300px;
 }
 
-.text-content h2 {
+.donatetext-content h2 {
   color: black;
   margin: 0 0 20px;
 }
 
-.text-content p {
+.donatetext-content p {
   color: #333;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
 }
 
-.text-content a {
+.donatetext-content a {
   display: inline-block;
   text-decoration: none;
   background-color: grey;
@@ -39,7 +39,7 @@
 }
 
 /* Right Statistics Section */
-.statistics {
+.donate-statistics {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,7 +48,7 @@
 }
 
 /* Individual Statistic Boxes */
-.stat-box {
+.donate-stat-box {
   text-align: center;
   background-color: #d8ff7e;
   border-radius: 10px;

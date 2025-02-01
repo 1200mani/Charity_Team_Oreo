@@ -1,0 +1,112 @@
+.initiative--support {
+    font-family: times new roman;
+    display: flex;
+    font-size: 1rem;
+    flex-wrap: wrap; /* Responsive: stack elements on smaller screens */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1200px; /* Center and limit section width */
+}
+
+/* Flexbox Container for Text and Image */
+.initiative-content-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    align-items: center;
+    gap: 2rem; /* Add spacing between text and image */
+}
+
+/* Text Content Styling */
+.initiative-text-content {
+    flex: 1; /* Allow text to take up available space */
+    max-width: 60%; /* Limit the text section's width */
+}
+
+/* Heading Style */
+.initiative-heading{
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    color: #333;
+    background-color: #d8ff7e; /* Highlight background */
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Adjust width to content */
+    margin: auto;
+}
+
+.initiative-content h3 {
+    font-size: 1.5rem;
+    color:  #f8f8f8;
+    margin-bottom: 1rem;
+}
+
+.initiative-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.initiative-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.initiative-btn {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    border-radius: 50px; /* Rounded corners for an oval shape */
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8ff7e; /* Add background color */
+    color: #333; /* Button text color */
+    border: none; /* Optional: remove borders */
+    cursor: pointer;
+}
+
+.initiative-join-movement {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.initiative-join-movement:hover {
+    background-color: #555;
+}
+
+.initiative-support-cause {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.initiative-support-cause:hover {
+    background-color: #d8ff7e;
+    border-color: #d8ff7e;
+}
+
+/* Image Content Styling */
+.initiative-image-content {
+    flex: 1; /* Allow image to take up available space */
+    max-width: 35%; /* Limit the image section's width */
+}
+
+.initiative-img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image fills its container */
+}

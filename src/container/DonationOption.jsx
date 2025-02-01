@@ -4,14 +4,14 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import './DonationOption.css';
 
 const DonationOption = ({ title, details }) => (
-  <div className="donation-box">
-    <div className="donation-header">
+  <div className="donate-donation-box">
+    <div className="donate-donation-header">
       <h3>{title}</h3>
     </div>
     {details.map((detail, index) => (
-      <div className="donation-detail" key={index}>
+      <div className="donate-donation-detail" key={index}>
         <h4>
-          <span className="icon"><FontAwesomeIcon icon={faBolt} /></span>
+          <span className="donate-icon"><FontAwesomeIcon icon={faBolt} /></span>
           {detail.heading}
         </h4>
         <p>{detail.text}</p>
@@ -46,18 +46,11 @@ const DonateePage = () => {
         { heading: 'Appreciation', text: 'We can provide you with a letter of appreciation for your donation.' }
       ]
     },
-    {
-      title: 'Legacy Giving',
-      details: [
-        { heading: 'Will or Trust', text: 'You can include ForHelp in your will or trust.' },
-        { heading: 'Specific Amount', text: 'You can designate a specific amount of money or property to ForHelp.' },
-        { heading: 'Life Insurance', text: 'You can name ForHelp as a beneficiary of your life insurance policy.' }
-      ]
-    }
+    
   ];
 
   return (
-    <div className="donation-container">
+    <div className="donate-donation-container">
       {donationOptions.map((option, index) => (
         <DonationOption key={index} title={option.title} details={option.details} />
       ))}

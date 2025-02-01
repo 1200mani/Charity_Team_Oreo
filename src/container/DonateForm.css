@@ -1,12 +1,12 @@
  /* Container */
- .donation-container-form {
+ .donate-donation-container-form {
     display: flex;
     justify-content: center;
     padding: 40px;
     background-color: #f9f9f9;
   }
   
-  .donation-content {
+  .donate-donation-content {
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
@@ -17,7 +17,7 @@
   }
   
   /* Left Section */
-  .donation-left {
+  .donate-donation-left {
     flex: 1;
     min-width: 300px;
     padding: 20px;
@@ -26,30 +26,30 @@
     color: black;
   }
   
-  .image-wrapper {
+  .donate-image-wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
   
-  .donation-image {
+  .donate-donation-image {
     width: 100%;
     max-width: 250px;
     border-radius: 8px;
   }
   
-  .social-section p {
+  .donate-social-section p {
     font-size: 14px;
     margin-bottom: 10px;
   }
   
-  .social-icons {
+  .donate-social-icons {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
   
-  .icon {
+  .donate-icon {
     width: 35px;
     height: 35px;
     display: flex;
@@ -63,24 +63,24 @@
     transition: 0.3s;
   }
   
-  .icon:hover {
+  .donate-icon:hover {
     background: #ffd700;
     color: white;
   }
   
   /* Right Section */
-  .donation-right {
+  .donate-donation-right {
     flex: 1.5;
     padding: 20px;
   }
   
-  .form-row {
+  .donate-form-row {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
   }
   
-  .input-field {
+  .donate-input-field {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
@@ -88,21 +88,21 @@
     font-size: 14px;
   }
   
-  .full-width {
+  .donate-full-width {
     width: 100%;
   }
   
-  .form-group {
+  .donate-form-group {
     margin-bottom: 15px;
   }
   
-  .checkbox-group {
+  .donate-checkbox-group {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
   
-  .textarea-field {
+  .donate-textarea-field {
     width: 100%;
     height: 80px;
     padding: 10px;
